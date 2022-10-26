@@ -2,7 +2,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-img {
+img#fotoProfil {
   width: 300px;
   height: 300px;
   object-fit: cover;
@@ -12,4 +12,14 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+div#sosial {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+div#sosial img#klik:hover {
+  cursor: pointer;
 }
