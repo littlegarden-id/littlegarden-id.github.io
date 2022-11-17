@@ -2,24 +2,39 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-img#fotoProfil {
+#hero {
   width: 300px;
   height: 300px;
   object-fit: cover;
-  border: 1 px solid salmon;
+  border: 5px solid white;
   border-radius: 50%;
-  padding: 5 px;
+  box-shadow: 0 0 20px 5px darkgrey;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-div#sosial {
+#sosial {
   display: flex;
   justify-content: center;
   margin-top: 25px;
 }
 
-div#sosial img#klik:hover {
+#klik:hover {
   cursor: pointer;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.aku,
+.little-garden {
+  margin: 10px 10px;
+  padding: 50px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 10px 2px darkgrey;
 }
