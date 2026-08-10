@@ -53,9 +53,9 @@ function type(){
 type();
 
 // mengirimm email
-const emailBtn = document.querySelector("button-email");
+const emailButtons = document.querySelectorAll("button-email");
 
-emailBtn.forEach(button => {
+emailButtons.forEach(button => {
     button.addEventListener("click", function() {
         const email = "ammster@yahoo.com";
         const subject = encodeURIComponent("Pesan dari Web Ilham");
