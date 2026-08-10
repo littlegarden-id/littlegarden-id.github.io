@@ -51,3 +51,14 @@ function type(){
 }
 
 type();
+
+// mengirimm email
+const emailBtn = document.getElementById("emailBtn");
+
+emailBtn.addEventListener("click", function() {
+    const email = "ammster@ymail.com";
+    const subject = encodeURIComponent("Pesan dari Web Ilham");
+    const body = encodeURIComponent("Halo, saya ingin bertanya tentang...");
+
+    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+});
