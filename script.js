@@ -53,12 +53,14 @@ function type(){
 type();
 
 // mengirimm email
-const emailBtn = document.getElementById("emailBtn");
+const emailBtn = document.querySelector("button-email");
 
-emailBtn.addEventListener("click", function() {
-    const email = "ammster@ymail.com";
-    const subject = encodeURIComponent("Pesan dari Web Ilham");
-    const body = encodeURIComponent("Halo, saya ingin bertanya tentang...");
+emailBtn.forEach(button => {
+    button.addEventListener("click", function() {
+        const email = "ammster@yahoo.com";
+        const subject = encodeURIComponent("Pesan dari Web Ilham");
+        const body = encodeURIComponent("Halo, saya ingin bertanya...");
 
-    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+    });
 });
