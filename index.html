@@ -1,49 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ilham</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <img src="img/foto.webp" alt="hero" id="hero" />
-    <div id="sosial">
-      <img id="klik" src="img/icon instagram 50.svg" alt="icon instagram" />
-    </div>
-    <div class="main-container">
-      <div class="aku">
-        <h1>Tentang Aku</h1>
-        <p>
-          Latar belakang pendidikanku adalah teknik sipil, tapi aku sudah menunjukkan ketertarikan dengan komputer sejak duduk di bangku SMP. Di saat itulah aku pertama kalinya memegang komputer, aku masih ingat kenangan saat aku berlari
-          menuju lab karena saking senangnya bakal bisa main komputer. Sampai sekarang aku masih suka dengan hal hal yang berhubungan komputer.
-        </p>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>ILHAM</title>
+</head>
+<body>
+    
+    <!-- navigation menu -->
+     <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                <span>Ilham</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#skill">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#services">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#contact">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>            
+        </div>
+            <div class="dropdown">
+                <div class="links">
+                    <a href="#">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skill">Skills</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                    <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+                </div>
+            </div>                
+     </nav>
+     <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="/03/img/foto.webp" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">
+                    Hey I'm
+                    <span>Ilham</span>
+                </h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
+                    I'm a
+                    <span class="typewriter-text"></span>
+                    <label for=""></label>
+                </div>
+                <div class="home-text" data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">
+                    <p>
+                        Saya seorang Engineer yang memiliki pengalaman dalam perencanaan, desain, dan pengawasan berbagai proyek konstruksi. Mulai dari skala kecil hingga besar.
+                    </p>
+                    <br>
+                    <p>
+                        Visi saya adalah menjadi bagian dari industri konstruksi yang terus bertransformasi menuju efisiensi, keselamatan, dan inovasi yang lebih baik.
+                    </p>
+                </div>                                             
+                <div class="social-links">
+                    <a href="https://www.facebook.com/il.hamn007" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/il.hamn" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+                <div class="btn" data-aos="zoon-in" data-aos-duration="1500" data-aos-delay="1800">
+                    <button>Contact Me</button>
+                </div>
+            </div>
+        </div>
+     </section>
 
-      <div class="little-garden">
-        <h1>Tentang littlegarden-id</h1>
-        <p>
-          Seperti yang sudah kalian ketahui, littlegarden-id.github.io adalah nama domainku, ada alasan tersendiri kenapa aku memilih nama tersebut. Bagi kalian yang fans One Piece nama little garden pasti tidak asing lagi, ini adalah pulau
-          prasejarah. Isinya tumbuhan dan binatang purba yang kebanyakan berukuran besar, sangat berkebalikan dengan namanya little garden.
-        </p>
-        <p>
-          Little garden bagiku bisa diibaratkan sebagai sebuah kebun, tentunya kebun akan ditanami dengan tanaman sesuai dengan selera pemilik kebun. Begitu juga dengan little garden ini, aku pun akan menanam tanaman yang aku suka tapi
-          tentu saja bukan dengan tanaman yang sesungguhnya melainkan sebuah tulisan.
-        </p>
-        <p>
-          "Menulis adalah sebuah keberanian..." -Pramoedya Ananta Toer. Kata kata itulah yang menjadi penyemangatku untuk berani menulis, jujur saja aku ga begitu pandai dalam menulis. Menulis bukan karena didekte orang lain, menulis bukan
-          karena ada yang harus dicatat, tapi menulis karena orang lain. Agar mereka dapat memahami gejolak jiwa hanya lewat tulisan, duh...memikirkanya saja aku udah seneng banget jika orang lain bisa mengerti, merasakan kemudian
-          mengekspresikan tentang gejolak jiwa ini karena membaca tulisanku.
-        </p>
-        <p>
-          Tapi aku ga akan menulis tentang itu (atau mungkin ada jika aku sedang sangat emosional, siapa yang tahu kan...). Di sini aku akan menulis tentang HTML, CSS dan mungkin ada sedikit Javascript, intinya sih sama aja. Yaitu agar
-          tulisanku dapat dimengerti komputer lalu dapat dijalankan olehnya, sehingga menghasilkan output sesuai yang aku harapkan. Tulisannya nanti bisa berupa source code agar halaman ini tampil menarik, atau memang benar benar tulisan
-          yang bisa kalian ambil hikmahnya :p. Jika halaman ini masih terlihat biasa-biasa saja dan belum ada isinya, itu berarti aku masih perlu belajar lebih banyak lagi.
-        </p>
-      </div>
-    </div>
+     <!-- About Section Start -->
+      <section class="about" id="about">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration="1500"><span>About Me</span></div>
+            <div class="about-details">
+                <div class="left" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+                    <img src="/03/img/foto.webp" alt="">
+                </div>
+                <div class="right">
+                    <div class="topic" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">Engineering is My Pasion</div>
+                    <div class="about-text" data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">
+                        <h3>
+                            Poin Utama Fokus Saya:
+                        </h3>                       
+                        <ul>
+                            <li>
+                                Mengembangkan keahlian mendalam dalam desain struktur dan manajemen proyek.
+                            </li>
+                            <li>
+                                Mendorong budaya kerja yang mengutamakan inovasi serta keselamatan.
+                            </li>
+                            <li>
+                                Berbagi pengetahuan, pengalaman, dan berkolaborasi dengan rekan seprofesi.
+                            </li>
+                        </ul>
+                        <br>
+                        <h3>
+                            Sisi Lain Saya:
+                        </h3>
+                        <p>
+                            Pekerjaan teknik mengajarkan saya ketelitian, namun minat di luar itu menjaga kreativitas saya tetap hidup:
+                        </p>
+                        <ul>
+                            <li>
+                                <b>Tech Explorer:</b> Selalu antusias mengeksplorasi perkembangan teknologi modern dan alat-alat digital terkini.
+                            </li>
+                            <li>
+                                <b>Subtitle Creator di subsource:</b> Berkontribusi dalam penyelarasan bahasa dan konten visual.
+                            </li>
+                            <li>
+                                <b>Seni & Alam:</b> Menyeimbangkan pikiran melalui menggambar sketsa pensil dan merawat tanaman di kebun.
+                            </li>
+                        </ul>                    
+                    </div>                    
+                    <div class="button" data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="400">
+                        <button>Contact Me</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
 
-    <script src="script.js"></script>
-  </body>
+      <!-- My Skill Section Start -->
+       <section class="skills" id="skill">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>My Skills</span></div>
+            <div class="skills-details">
+                <div class="text">
+                    <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+                        Skills Reflects Our Knowledge
+                    </div>
+                    <p data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">
+                        Sebagai profesional di bidang konstruksi dengan pengalaman sebagai konsultan perencana dan konsultan pengawas, aku berfokus pada penyajian solusi desain yang presisi, aman, dan efisien. Berbekal pemahaman mendalam dalam membaca serta merancang gambar teknis, aku terbiasa mengolah konsep menjadi dokumentasi kerja yang akurat. Kombinasi kemampuan analisis struktur, estimasi biaya, dan komunikasi yang adaptif memungkinkanku untuk mengawal jalannya proyek secara terstruktur dari tahap perencanaan hingga pengawasan lapangan.
+                    </p>
+                    <div class="experience" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+                        <div class="num">8</div>
+                        <div class="exp">
+                            Tahun <br>
+                            Pengalaman
+                        </div>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <div class="box">
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150">Desain Teknis dan Pemodelan Struktur</div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">
+                            <p>
+                                Mahir membaca dan merancang gambar teknis secara presisi. Terbiasa melakukan analisis struktur, pemodelan 3D, dan pengerjaan elemen sipil menggunakan perangkat lunak standar industri seperti AutoCAD, Autodesk Revit, SketchUp, Civil 3D, ETABS, dan SAP2000.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150">Manajemen Proyek dan Estimasi Biaya (RAB)</div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">
+                            <P>
+                                Memiliki keahlian analitis dalam menyusun dan menganalisis Rencana Anggaran Biaya (RAB) agar efisiensi anggaran tetap terjaga. Terbiasa mengelola dokumentasi, penjadwalan, dan presentasi proyek menggunakan MS Project, MS Excel, MS Word, dan MS PowerPoint.
+                            </P>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450">Pengalaman Pengawasan dan Kerja Tim</div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="900">
+                            <P>
+                                Berpengalaman dalam peran ganda sebagai Konsultan Perencana dan Konsultan Pengawas. Dikenal sangat teliti (detail-oriented), memiliki kemampuan analisis yang kuat, serta komunikatif dalam berkoordinasi dengan tim maupun lintas divisi di lapangan.
+                            </P>                            
+                        </div>
+                    </div>                    
+                    <div class="box">
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450"></div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600"></div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+       </section>
+
+       <!-- My Services Section Start -->
+        <section class="services" id="services">
+            <div class="content">
+                <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>My Services</span></div>
+                <div class="boxes">
+                    <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                        <div class="icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <div class="topic">Perencanaan dan Desain Struktur</div>
+                        <p>Melakukan pemodelan, analisis kekuatan struktur, dan perhitungan beban teknis untuk memastikan bangunan aman dan sesuai standar keselamatan.</p>
+                    </div>
+                    <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                        <div class="icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <div class="topic">Pembuatan Gambar Teknis dan Pemodelan 3D</div>
+                        <p>Menyusun gambar kerja (detail engineering design/DED), gambar arsitektural/sipil, pemodelan 3D bangunan, serta pemodelan kontur lahan dan infrastruktur.</p>
+                    </div>
+                    <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                        <div class="icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="topic">Penyususnan dan Analisis RAB</div>
+                        <p>Menganalisis kebutuhan material, volume pekerjaan (take-off quantity), estimasi biaya konstruksi, hingga penyusunan dokumen Rencana Anggaran Biaya yang presisi dan efisien.</p>
+                    </div>
+                    <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
+                        <div class="icon">
+                            <i class="fab fa-android"></i>
+                        </div>
+                        <div class="topic">Pengawasan dan Manajemen Proyek</div>
+                        <p>Membantu mengawasi kesesuaian pelaksanaan lapangan dengan gambar rencana, mengontrol mutu pekerjaan, serta menyusun penjadwalan (timeline) dan laporan kemajuan proyek.</p>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Me Section Start -->
+         <section class="contact" id="contact">
+            <div class="content">
+                <div class="title" data-aos="fade-up" data-aos-duration="1500">
+                    <span>Contact Me</span>
+                </div>
+                <div class="text">
+                    <div class="topic" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">Have Any Project?</div>
+                    <p>Siap merealisasikan proyekmu dengan perencanaan yang aman dan efisien? Hubungi aku sekarang untuk diskusi awal dan konsultasi kebutuhan proyekmu!</p>
+                    <div class="button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
+                        <button>Let's Chat</button>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <!-- Footer Section Start -->
+          <footer>
+            <div class="text">
+                <span>
+                    Created By
+                    <a href="#">ilham</a>
+                    | &#169; 2026 All Right Reserved
+                </span>
+            </div>
+          </footer>
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+          <script>
+          AOS.init({offset:0});            
+          </script>
+          <script src="/03/script.js"></script>
+</body>
 </html>
