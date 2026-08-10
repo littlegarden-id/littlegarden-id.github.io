@@ -119,11 +119,9 @@ nav{
     transition: 0.2s linear;
 }
 
-/* tambahan setelah brain sorming dengan Gemini */
 .dropdown.active {
     transform: translateY(0);
 }
-/* Gemini out */
 
 .dropdown .links a{
     display: flex;
@@ -142,9 +140,7 @@ nav{
 section{
     width: 100%;
     min-height: 90vh;
-    /* tambahan */
-    scroll-margin-top: 10vh;
-    /* tambahan selesai */
+    scroll-margin-top: 10vh;    
 }
 
 section .main-container{
@@ -159,8 +155,7 @@ section .main-container{
     /* height: 55vh; */
     border-radius: 100%;
     overflow: hidden;
-    box-shadow: 0 0 50px #b74b4b;
-    /* masukan gemini */
+    box-shadow: 0 0 50px #b74b4b;    
     aspect-ratio: 1 / 1;
 }
 
@@ -211,7 +206,6 @@ section .main-container{
     text-shadow: 0 0 10px #b74b4b;
 }
 
-/* tambahan Gemini */
 .content .typewriter-text::after{
     content: '|';
     color: #fff;
@@ -222,7 +216,6 @@ section .main-container{
     0%, 100% {opacity: 1;}
     50% {opacity: 0;}
 }
-/* Gemini out */
 
 .content .home-text{
     font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
@@ -336,12 +329,10 @@ section .title span::after{
     width: 55%;
 }
 
-/* tambahan gw */
 .about-text{
     text-align: justify;
     color: white;
 }
-/* gw out */
 
 section .topic{
     color: white;
