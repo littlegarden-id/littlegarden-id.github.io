@@ -53,14 +53,16 @@ function type(){
 type();
 
 // mengirimm email
-const emailButtons = document.querySelectorAll("button-email");
+const emailButtons = document.querySelectorAll(".btn-email");
 
-emailButtons.forEach(button => {
-    button.addEventListener("click", function() {
-        const email = "ammster@yahoo.com";
-        const subject = encodeURIComponent("Pesan dari Web Ilham");
-        const body = encodeURIComponent("Halo, saya ingin bertanya...");
+if (emailButtons && emailButtons.length > 0) {
+    Array.from(emailButtons).forEach(button => {
+        button.addEventListener("click", function() {
+            const email = "emailkamu@example.com";
+            const subject = encodeURIComponent("Pesan dari Portofolio");
+            const body = encodeURIComponent("Halo, saya ingin bertanya...");
 
-        window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+            window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+        });
     });
-});
+}
