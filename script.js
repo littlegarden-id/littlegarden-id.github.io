@@ -58,8 +58,8 @@ const emailButtons = document.querySelectorAll(".btn-email");
 if (emailButtons && emailButtons.length > 0) {
     Array.from(emailButtons).forEach(button => {
         button.addEventListener("click", function() {
-            const email = "emailkamu@example.com";
-            const subject = encodeURIComponent("Pesan dari Portofolio");
+            const email = "ammster@ymail.com";
+            const subject = encodeURIComponent("Pesan dari Web Ilham");
             const body = encodeURIComponent("Halo, saya ingin bertanya...");
 
             window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
