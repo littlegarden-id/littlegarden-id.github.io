@@ -210,7 +210,7 @@ section .main-container{
 }
 
 .content .typewriter{
-    font-size: clamp(1rem, 1rem + 5vw, 2.5rem);    
+    font-size: clamp(1rem, 1rem + 1cqw, 2.5rem);    
     /* font-size: 2.5rem;     */
     font-weight: 600;
 }
@@ -333,8 +333,8 @@ section .title span::after{
 }
 
 .about .left img{
-    height: 400px;
-    width: 400px;
+    width: clamp(300px, 30cqw, 400px);
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 12px;
 }
@@ -368,7 +368,7 @@ section .button button{
     outline: none;
     padding: 8px 16px;
     border-radius: 4px;
-    font-size: 25px;
+    font-size: 120%;
     font-weight: 400;
     background: #b74b4b;
     color: #fff;
@@ -393,17 +393,19 @@ section .button button:hover{
 
 .skills .skills-details{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 50px;
     align-items: center;
 }
 
 .skills-details .text{
-    width: 50%;
+    /* width: 50%; */
+    width: calc(40% - 25px);
 }
 
 .skills-details p{
     color: #fff;
-    text-align: justify;
+    text-align: justify;    
 }
 
 .skills .skills-details .experience{
@@ -426,7 +428,8 @@ section .button button:hover{
 }
 
 .skills-details .boxes{
-    width: 45%;
+    /* width: 50%; */
+    width: calc(60% - 25px);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -517,10 +520,17 @@ section .button button:hover{
 }
 
 .contact .text p{
+    width: 50%;
+    margin: auto;
     color: white;
 }
 
 footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     background: #b74b4b;
     padding: 15px 0;
     text-align: center;
