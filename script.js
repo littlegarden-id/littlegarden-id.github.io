@@ -18,7 +18,7 @@ if (dropDownLinks.length > 0){
 }
 
 // mengisi typewriter
-const words = ["Site Civil Engineer", "Drafter Engineer", "Tech Explorer", "Subtitle Creator"];
+const words = ["Site Civil Engineer", "Drafter Engineer", "Tech Explorer"];
 const textElement = document.querySelector(".typewriter-text");
 
 let wordIndex = 0;
