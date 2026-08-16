@@ -107,6 +107,20 @@ nav{
     color: #b74b4b;
 }
 
+/* warna background aktif */
+
+.nav-container .links a.active::before{
+    width: 100%;
+    background-color: white;
+}
+
+.nav-container .links a.active{
+    color: #b74b4b;    
+    font-weight: 900;
+}
+
+/* background out */
+
 .dropdown{
     z-index: 100;
     position: absolute;

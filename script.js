@@ -17,6 +17,16 @@ if (dropDownLinks.length > 0){
     });
 }
 
+// warna nav aktif
+const navLinks = document.querySelectorAll(".nav-container .links a");
+
+navLinks.forEach(link => {
+    link.addEventListener("click", function() {
+        navLinks.forEach(item => item.classList.remove("active"));
+        this.classList.add("active");
+    });
+});
+
 // mengisi typewriter
 const words = ["Site Civil Engineer", "Drafter Engineer", "Tech Explorer"];
 const textElement = document.querySelector(".typewriter-text");
